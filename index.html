@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAYAK MIC | Nayak Empire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NAYAK <span>MIC</span></div>
+    <div class="status" id="status">● Offline</div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>NAYAK <span>MIC</span></h1>
+        <p>Your Phone. Your Wireless Microphone.</p>
+        <div class="mic-icon">🎙️</div>
+        <h2>Wireless Microphone System</h2>
+        <p class="description">
+            Turn your smartphone into a wireless microphone
+            for your computer.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h2>Mobile Microphone</h2>
+            <p>Use your phone as a microphone.</p>
+
+            <button id="startBtn">START MICROPHONE</button>
+
+            <button id="stopBtn" class="stop" disabled>
+                STOP MICROPHONE
+            </button>
+
+            <div id="micStatus">Microphone: Not Started</div>
+
+            <div id="codeBox" hidden>
+                <h3>Your Pairing Code</h3>
+                <div id="generatedCode">------</div>
+                <p>Enter this code on your computer.</p>
+            </div>
+
+            <div class="meter">
+                <div id="meterBar"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h2>Computer Receiver</h2>
+            <p>Receive live audio from your phone.</p>
+
+            <input
+                type="text"
+                id="pairCode"
+                placeholder="Enter 6-digit Pairing Code"
+                maxlength="6"
+                inputmode="numeric"
+            >
+
+            <button id="connectBtn">
+                CONNECT PHONE
+            </button>
+
+            <audio id="remoteAudio" autoplay controls></audio>
+
+            <p id="receiverStatus" class="small">
+                Waiting for connection.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="how">
+        <h2>How It Works</h2>
+        <p>1. Open NAYAK MIC on your phone.</p>
+        <p>2. Start your microphone.</p>
+        <p>3. Enter the pairing code on your computer.</p>
+        <p>4. Connect and talk.</p>
+    </section>
+
+</main>
+
+<footer>
+    <h3>NAYAK EMPIRE</h3>
+    <p>Created by Rohan Rathod</p>
+    <p>Learn • Build • Innovate</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

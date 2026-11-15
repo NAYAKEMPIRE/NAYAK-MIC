@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080d18;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101a2b;
+    border-bottom: 1px solid #173b65;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span,
+h1 span {
+    color: #00aaff;
+}
+
+.status {
+    color: #ff5555;
+    font-size: 14px;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 10px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    letter-spacing: 3px;
+}
+
+.hero > p:first-of-type {
+    color: #00aaff;
+    margin: 15px;
+}
+
+.mic-icon {
+    font-size: 75px;
+    margin: 25px;
+}
+
+.description {
+    color: #aab8cc;
+    margin-top: 12px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 65px;
+}
+
+.card {
+    background: #111e32;
+    border: 1px solid #164b7b;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aab8cc;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #008fe0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00b4ff;
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+button.stop {
+    background: #d93636;
+}
+
+#micStatus {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #00caff;
+}
+
+.meter {
+    height: 9px;
+    background: #25344b;
+    border-radius: 10px;
+    margin-top: 18px;
+    overflow: hidden;
+}
+
+#meterBar {
+    height: 100%;
+    width: 0%;
+    background: #00baff;
+    transition: width 0.1s;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #1685c9;
+    background: #080d18;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.small {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.how {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.how h2 {
+    margin-bottom: 20px;
+    color: #00aaff;
+}
+
+.how p {
+    margin: 12px;
+    color: #bdc9d9;
+}
+
+footer {
+    background: #101a2b;
+    text-align: center;
+    padding: 30px;
+    color: #aab8cc;
+}
+
+footer h3 {
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    header {
+        padding: 18px 5%;
+    }
+}
