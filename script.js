@@ -1,6 +1,6 @@
 // NAYAK MIC - WebRTC Audio System
 
-cconst SIGNALING_SERVER = "wss://nayak-mic.onrender.com";
+const SIGNALING_SERVER = "wss://nayak-mic.onrender.com";
 
 let socket = null;
 let peerConnection = null;
