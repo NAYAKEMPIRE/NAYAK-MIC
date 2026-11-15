@@ -29,9 +29,12 @@ wss.on("connection", (ws) => {
             ws.role = role;
 
             if (!rooms.has(room)) rooms.set(room, {});
-            rooms.get(room)[role] = ws;
+           rooms.get(room)[role] = ws;
 
-            const peer = rooms.get(room)[role === "mic" ? "receiver" : "mic"];
+// Confirm successful joining
+ws.send(JSON.stringify({ type: "joined" }));
+
+const peer = rooms.get(room)[role === "mic" ? "receiver" : "mic"];
 
             if (peer && peer.readyState === WebSocket.OPEN) {
                 peer.send(JSON.stringify({ type: "peer-joined" }));
